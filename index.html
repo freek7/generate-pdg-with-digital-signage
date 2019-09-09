@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <form id="signature-form" action="form.php" method="POST">
+      <div class="form-group">
+        <label for="email">Email address:</label>
+        <input name="email" type="email" class="form-control" id="email">
+      </div>
+      <div class="form-group">
+        <label for="pwd">name:</label>
+        <input name="name" type="text" class="form-control" id="pwd">
+      </div>
+      <div class="form-group">
+        <div id="signature-pad">
+          <div class="m-signature-pad--body">
+            <canvas></canvas>
+          </div>
+        </div>
+        <div>
+          <button class="btn btn-danger" type="button" id="clear">Clear</button>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  <script src="signature.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
